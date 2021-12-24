@@ -1,7 +1,9 @@
 #include <linux/init.h>
 #include <linux/module.h>
 
-int simple_init(void) {
+MODULE_LICENSE("GPL");
+
+__init int simple_init(void) {
 
     printk(KERN_ERR "Simple module init: %s\n", __FUNCTION__);
     return 0;
